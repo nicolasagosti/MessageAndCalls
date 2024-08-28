@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Ubuntu:wght@500&display=swap');
+@import "./variables.scss";
+
+// font-family: 'Roboto Mono', monospace;
+// font-family: 'Ubuntu', sans-serif;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+}
+
+button {
+    width: 4rem;
+    height: 2rem;
+    background: $green;
+    color: $white;
+    outline: none;
+    border: none;
+    border-radius: $borderRadius1;
+    cursor: pointer;
+}
+
+.disconnect__button {
+    padding: 0 0.5rem;
+    background: $red;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+}
+
+// HEADER
+.header__container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+
+    .onCall {
+        background: $green;
+        border: 1.5px solid $green;
+        border-radius: $borderRadius1;
+        padding: 0.3rem;
+        font-size: 0.9rem;
+        color: $white;
+    }
+}
+
+// HOME
+.home__container {
+    height: 100vh;
+    width: 100vw;
+
+    .home__hero {
+        font-family: 'Ubuntu', sans-serif;
+        text-align: center;
+        width: 100%;
+        margin: 3rem 0 2rem 0;
+    }
+
+    h1 {
+        margin-bottom: 1rem;
+    }
+
+    .home__content {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+// FORM
+.form__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .details__box {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .label__container, .input__container {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    input {
+        height: 1.5rem;
+        padding-left: 0.3rem;
+        outline: none;
+        border: 1.5px solid $gray;
+        border-radius: $borderRadius1;
+    }
+
+    textarea {
+        resize: none;
+        padding: 0.3rem;
+        outline: none;
+        border: 1.5px solid $gray;
+        border-radius: $borderRadius1;
+    }
+
+    input:focus, textarea:focus {
+        border: 2px solid $green;
+    }
+
+    p {
+        width: 100%;
+        text-align: right;
+        font-size: 0.8rem;
+    }
+
+    .button__container {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 100%;
+        gap: 1rem;
+    }
+}
+
+// LOG
+.log__container {
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    
+    .log__box {
+        display: flex;
+        gap: 2rem;
+        border: 2px dashed $gray;
+        border-radius: $borderRadius1;
+        padding: 1rem;
+        width: 50%;
+        height: inherit;
+        overflow-y: scroll;
+    }
+
+    .log__div {
+        width: 100%;
+    }
+
+    .log__map {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    .nologs {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: -1.5rem;
+    }
+
+}
